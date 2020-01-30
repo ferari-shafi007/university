@@ -1,0 +1,134 @@
+    /* * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('/res/img/bg-main.jpg') no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    background: url('/res/img/header.png');
+    background-size: cover;
+    margin: 0 15%;
+    height: 20rem;
+}
+
+.logo {
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+}
+
+.navigation {
+    padding: 0 15%;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.container {
+    background: url('/res/img/page-bg.jpg');
+    margin: 0 15% 0 15%;
+    background-size: cover;
+    width: 70%;
+    height: 100%;
+}
+ */
+    
+    .notice-table {
+        width: 100%;
+    }
+    
+    .notice-table td {
+        border: 2px solid #666;
+        border-spacing: 0;
+        padding: 5px 10px;
+        text-align: center;
+    }
+    
+    .notice-table tr:nth-child(even) {
+        background-color: #f2f2f222;
+    }
+    
+    .notice-table td:nth-child(1) {
+        width: 10%;
+    }
+    
+    .notice-table td:nth-child(2) {
+        width: 20%;
+    }
+    
+    .notice-table td:nth-child(3) {
+        width: 50%;
+    }
+    
+    .notice-table td:nth-last-child() {
+        width: 10%;
+    }
+    
+    .notice-icon {
+        height: 50px;
+    }
+    
+    .div-404 {
+        height: 70vh;
+    }
+    
+    .heading-404 {
+        padding-top: 17%;
+    }
+    /*  
+.footer {
+    text-align: center;
+    color: #666;
+    margin: 10px 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #666;
+}
+
+input.hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+#profile-image1 {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #03b1ce;
+}
+
+.tital {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bot-border {
+    border-bottom: 1px #f8f8f8 solid;
+    margin: 5px 0 5px 0
+}
+
+.titel-name {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 70px;
+    left: 37%;
+} */
+    
+    .student-table {
+        margin: 15px 0 0 0;
+    }

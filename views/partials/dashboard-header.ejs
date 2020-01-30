@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NPIUB</title>
+    <!-- fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/bbc4ed1dbc.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- main css  -->
+    <link rel="stylesheet" href="/res/css/dashboard.css">
+
+</head>
+
+<body>
+    <nav class="navbar  navbar-light bg-light">
+        <a class="navbar-brand" href="#">NPIUB</a>
+
+        <div class="ml-auto" id="navbarNav">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <%= user.name %>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <img class="dashboard-user-img" src="../public/uploads/<%=user.userIMG%>" alt="">
+                </li>
+                <li>
+                 <a href="/users/logout" class="text-center"><i class="fas fa-sign-out-alt"></i>sign out</a>
+
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div>
+
+
+    </div>
+
+
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-md-2 d-md-block bg-light sidebar">
+                    <div class="sidebar-sticky">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/dashboard">
+                                    <span data-feather="home"></span> Dashboard <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/notice/add">
+                                    <span data-feather="file"></span> Notice
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/notice/edit">
+                                    <span data-feather="file"></span> Edit Notice
+                                </a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/student/dashboard">
+                                    <span data-feather="file"></span> Student
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/student/add">
+                                    <span data-feather="file"></span> Add Student
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/users/baches">
+                                    <span data-feather="file"></span> Baches
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/general">
+                                    <span data-feather="file"></span> General Settings
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/users/profile">
+                                    <span data-feather="file"></span> User Profile
+                                </a>
+                            </li>
+
+
+                        </ul>
+
+
+
+                    </div>
+                </nav>

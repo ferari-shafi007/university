@@ -1,0 +1,62 @@
+<%- include("../partials/dashboard-header") -%>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+<div class="text-center">
+      <h1>Notice bord</h1>
+  
+</div>
+
+    <table class="notice-table">
+        <tr>
+            <td>Date</td>
+            <td>Bach</td>
+            <td>Notice</td>
+            <td>File</td>
+                        <td>Action</td>
+
+        </tr>
+
+        <% notice.forEach((notice) => { %>
+            <tr>
+                <td>
+                    <%= notice.date %>
+                </td>
+                <td>
+                    <%= notice.bach %>
+                </td>
+                <td>
+                    <span class="font-weight-bold"><%= notice.subject %></span>
+                    <p>
+                        <%= notice.noticeBody %>
+                    </p>
+                </td>
+                <td>
+                    <%if (notice.noticeFile1 != "") { %>
+                        <a href="<%= notice.noticeFile1 %>"><img class="notice-icon" src="/res/img/pdf.png" alt=""></a>
+                        <% } %>
+                    <%if (notice.noticeFile2 != "") { %>
+                        <a href="<%= notice.noticeFile2 %>"><img class="notice-icon" src="/res/img/pdf.png" alt=""></a>
+                        <% } %>
+                    <%if (notice.noticeFile3 != "") { %>
+                        <a href="<%= notice.noticeFile3 %>"><img class="notice-icon" src="/res/img/pdf.png" alt=""></a>
+                        <% } %>
+                    <%if (notice.noticeFile4 != "") { %>
+                        <a href="<%= notice.noticeFile4 %>"><img class="notice-icon" src="/res/img/pdf.png" alt=""></a>
+                        <% } %>
+
+
+                </td>
+                            <td>
+                              <a class="btn btn-warning" href='/notice/edit/<%= notice._id%>'><i
+                                    class="fas fa-edit    "></i> </a>
+                            <a class="btn btn-danger" href='/notice/delete/<%= notice._id%>'><i
+                                            class="fas fa-trash"></i> </a>
+                            </td>
+
+            </tr>
+            <%  }); %>
+
+    </table>
+    
+</main>
+
+<%- include("../partials/dashboard-footer") -%>

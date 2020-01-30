@@ -1,0 +1,75 @@
+<%- include("../partials/dashboard-header") -%>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+    <div class="container">
+        <div class="send-messege">
+            <h1 class="messege-header">Send Messege</h1>
+            <form class="was-validated" action="/notice/add" method="post">
+
+
+<input type="checkbox" onClick="toggle(this)" /> Select All<br/>
+                <% bach.forEach((bach) => { %>
+
+                    <div class="form-check">
+                        <input class="form-check-input bachCheck" type="checkbox" value="<%=bach.name%>" id="defaultCheck1" name="bach">
+                        <label class="form-check-label" for="defaultCheck1">
+         <%= bach.name %>
+    </label>
+                    </div>
+                    <%  }); %>
+
+                        <div class="mb-3">
+                            <label for="validationTextarea">Messege Subject</label>
+                            <input type="text" class="form-control is-invalid" id="validationTextarea" name='noticeHead' placeholder="Subject" required></input>
+                            <div class="invalid-feedback">
+                                Please enter a subject.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="validationTextarea">Messege</label>
+                            <textarea class="form-control is-invalid" id="validationTextarea" name='noticeBody' placeholder="Messege" required></textarea>
+                            <div class="invalid-feedback">
+                                Please enter a message in the textarea.
+                            </div>
+                        </div>
+                        <%= typeof msg != 'undefined' ? msg : '' %>
+                            <div class="mb-3">
+                                <label for="validationTextarea">Messege file url</label>
+                                <input type="text" class="form-control is-invalid" id="validationTextarea" name="noticeFile1" placeholder="file url"></input>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="validationTextarea">Messege file url</label>
+                                <input type="text" class="form-control is-invalid" id="validationTextarea" name='noticeFile2' placeholder="file url"></input>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="validationTextarea">Messege file url</label>
+                                <input type="text" class="form-control is-invalid" id="validationTextarea" name='noticeFile3' placeholder="file url"></input>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="validationTextarea">Messege file url</label>
+                                <input type="text" class="form-control is-invalid" id="validationTextarea" name='noticeFile4' placeholder="file url"></input>
+
+                            </div>
+
+
+                            <button class="btn btn-primary btn-lg bg-success">Send</button>
+
+            </form>
+
+        </div>
+
+    
+</main>
+        <%- include("../partials/dashboard-footer") -%>
+
+<script language="JavaScript">
+function toggle(source) {
+  checkboxes = $(".bachCheck");
+  for(var i=0, n=checkboxes.length;i<n;i++) {
+    checkboxes[i].checked = source.checked;
+  }
+}
+</script>

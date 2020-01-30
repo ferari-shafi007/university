@@ -1,0 +1,33 @@
+<%- include("../partials/dashboard-header") -%>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">New Notice</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+            </div>
+        </div>
+
+
+        <form class="was-validated" action="/notice" method="POST">
+            <div class="mb-3">
+                <label for="validationTextarea">Write notice</label>
+                <textarea class="form-control is-invalid" placeholder="Required notice" required name="notice"></textarea>
+                <div class="invalid-feedback">
+                    Please enter a Notice in the textarea.
+                </div>
+            </div>
+
+
+
+
+
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" name="noticeFile" required name="file">
+                <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                <div class="invalid-feedback">Select scaned file</div>
+            </div>
+
+            <button class="btn btn-lg bg-success">Submit</button>
+        </form>
+
+        <%- include("../partials/dashboard-footer") -%>

@@ -1,0 +1,139 @@
+<%- include("../partials/dashboard-header") -%>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+<div class="container">
+    
+
+<h1>General Settings</h1>
+
+<form class="" action="/admin/generalsetting?_method=PUT" method="post">
+
+
+                <div class="form-group">
+                    <label for="bachName">Tagline</label>
+                    <input type="text" class="form-control " id="bachName" name="tagLine" value="<%=general.tagline%>">
+
+                </div>
+
+                <div class="form-group">
+                    <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                    <label for="bachName">Facebook</label>
+                    <input type="text" class="form-control " id="bachName" name="facebook" value="<%=general.facebook%>">
+
+                </div>
+
+                <div class="form-group">
+                <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                    <label for="bachName">Twitter</label>
+                    <input type="text" class="form-control " id="bachName" name="twitter" value="<%=general.twitter%>">
+
+                </div>
+
+                <div class="form-group">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <label for="bachName">Instagram</label>
+                    <input type="text" class="form-control " id="bachName" name="instagram" value="<%=general.instagram%>">
+
+                </div>
+
+                <div class="form-group">
+                <i class="fab fa-google-plus-square" aria-hidden="true"></i>
+                    <label for="bachName">Google</label>
+                    <input type="text" class="form-control " id="bachName" name="google" value="<%=general.google%>">
+
+                </div>
+
+                <div class="form-group">
+                <i class="fab fa-tumblr-square" aria-hidden="true"></i>
+                    <label for="bachName">Tumblr</label>
+                    <input type="text" class="form-control " id="bachName" name="tumblr" value="<%=general.tumblr%>">
+
+                </div>
+                
+
+
+
+                
+
+                <div class="form-group">
+                    <label for="bachName">About Header</label>
+                    <input type="text" class="form-control " id="bachName" name="aboutHeader" value="<%=general.aboutHeader%>">
+
+                </div>
+
+                 <div class="form-group">
+                    <label for="bachName">About Text</label>
+                    <textarea rows="6" cols="12" type="text" class="form-control " id="bachName" name="aboutText" value=""><%=general.aboutText%></textarea> 
+
+                </div>
+
+                 <div class="form-group">
+                    <i class="fas fa-location-arrow    "></i>                    <label for="bachName">Street</label>
+                    <input type="text" class="form-control " id="bachName" name="street" value="<%=general.street%>">
+
+                </div>
+
+                 <div class="form-group">
+                 <i class="fas fa-city    "></i>
+                    <label for="bachName">City</label>
+                    <input type="text" class="form-control " id="bachName" name="city" value="<%=general.city%>">
+
+                </div>
+
+
+                <div class="form-group">
+                    <i class="fas fa-phone-square" aria-hidden="true"></i>
+                    <label for="bachName">Phone Number</label>
+                    <input type="text" class="form-control " id="bachName" name="phone" value="<%=general.phone%>">
+
+                </div>
+
+
+                <div class="form-group">
+                    <i class="fas fa-map-marked    "></i>
+                    <label for="bachName">Map Iframe Tag</label>
+                    <input type="text" class="form-control " id="bachName" name="map" value="<%=general.map%>">
+
+                </div>
+
+
+                <div class="form-group">
+                    <i class="fas fa-envelope    "></i>
+                    <label for="bachName">Email Address</label>
+                    <input type="text" class="form-control " id="bachName" name="email" value="<%=general.email%>">
+
+                </div>
+
+
+                
+
+                <button type="submit" class="btn btn-primary btn-lg bg-success">Submit</button>
+
+            </form>
+
+
+<form action="/admin/aboutImg?_method=PUT" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="bachName">About Image</label>
+<img width="48" height="48" src="../public/uploads/<%=general.aboutImg%>">                    <br>
+                    <input type="file" name="img" required>
+
+                    <p>For better performance, image size 320X400 pixel</p>
+
+                </div>
+
+             <button type="submit" class="btn btn-primary btn-lg bg-success">Submit</button>
+
+                
+</form>
+
+</div>
+    
+</main>
+
+
+
+
+
+
+<%- include("../partials/dashboard-footer") -%>

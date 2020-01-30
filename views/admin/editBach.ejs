@@ -1,0 +1,47 @@
+<%- include("../partials/dashboard-header") -%>
+
+    <div class="container">
+
+
+
+
+
+        <div class="add-bach">
+
+            <h2 class="messege-header">Edit
+                <%= bach.name%>
+                    <%= bach.department%>
+            </h2>
+
+            <form class="was-validated" action="/users/edit-bach/<%=bach._id%>?_method=PUT" method="post">
+
+
+                <div class="form-group">
+                    <label for="bachName">Bach name</label>
+                    <input type="text" class="form-control " id="bachName" name="bachName" value="<%=bach.name%>" required>
+
+                </div>
+                <div class="form-group">
+                    <label for="bachName">Department</label>
+                    <input type="text" class="form-control " id="department" name="department" value="<%=bach.department%>" required>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="session">Session</label>
+                    <input type="text" class="form-control" id="session" name="session" value="<%=bach.session%>">
+                </div>
+
+                <div class="form-group">
+                    <label for="fbLink">FB Group Link</label>
+                    <input type="text" class="form-control" id="fbLink" name="fbLink" value="<%=bach.fbLink%>" required>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary btn-lg bg-success">Submit</button>
+
+            </form>
+        </div>
+    </div>
+
+    <%- include("../partials/dashboard-footer") -%>

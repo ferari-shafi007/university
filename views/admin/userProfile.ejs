@@ -1,0 +1,56 @@
+<%- include("../partials/dashboard-header") -%>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+    <div class="container">
+        <div class="send-messege">
+            <h1 class="messege-header">User Profile</h1>
+  
+<form class="was-validated" action="/users/edit-img" method="post" enctype="multipart/form-data">
+                        <%= typeof msg != 'undefined' ? msg : '' %>
+
+                    <div class="mb-3">
+                    <img src="../public/uploads/<%=user.userIMG%>" height="150" width="150">
+                            <label for="validationTextarea">Change Image</label>
+                            <input type="file" class="form-control is-invalid"  id="validationTextarea" name='img' placeholder="Subject"></input>
+                            
+                        </div>
+                    <button class="btn btn-primary btn-lg bg-success">Change Image</button>
+
+</form>
+
+            <form class="was-validated" action="/users/edit-profile" method="post">
+
+                        <div class="mb-3">
+                            <label for="validationTextarea">User Name</label>
+                            <input type="text" class="form-control is-invalid" value="<%=user.name%>" id="validationTextarea" name='username' required></input>
+                            
+                        </div>
+                      
+                        <%= typeof msg != 'undefined' ? msg : '' %>
+                            <div class="mb-3">
+                                <label for="validationTextarea">Email</label>
+                                <input type="email" class="form-control is-invalid" id="validationTextarea" value="<%=user.email%>" name="email" ></input>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="validationTextarea">Facebook ID</label>
+                                <input type="text" class="form-control is-invalid" id="validationTextarea" value="<%=user.fbid%>" name='fbid' ></input>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="validationTextarea">Facebook Password</label>
+                                <input type="password" autocomplete="off" class="form-control is-invalid" id="validationTextarea" value="<%=user.fbPass%>" name='fbPass'></input>
+
+                            </div>
+                            
+
+
+                            <button class="btn btn-primary btn-lg bg-success">Submit</button>
+
+            </form>
+
+        </div>
+   
+</main>
+
+        <%- include("../partials/dashboard-footer") -%>

@@ -1,0 +1,43 @@
+MongoDB Connected
+notice created
+info login Logging in...
+info login Logged in
+info login Request to reconnect
+info login Request to pull 1
+info login Request to pull 2
+info login Request to thread_sync
+info login Done logging in.
+ERR! login TypeError: Cannot read property 'toLowerCase' of undefined
+ERR! login     at Object.getUserID (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\src\getUserID.js:27:19)
+ERR! login     at callback (H:\Web-development\University-Project\login-v2\routes\notice.js:97:21)
+ERR! login     at H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\index.js:442:14
+ERR! login     at tryCatcher (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\util.js:26:23)
+ERR! login     at Promise._settlePromiseFromHandler (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\promise.js:510:31)
+ERR! login     at Promise._settlePromiseAt (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\promise.js:584:18)
+ERR! login     at Async._drainQueue (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\async.js:128:12)
+ERR! login     at Async._drainQueues (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\async.js:133:10)
+ERR! login     at Immediate.Async.drainQueues [as _onImmediate] (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\async.js:15:14)
+ERR! login     at processImmediate (internal/timers.js:439:21)
+ERR! login  TypeError: Cannot read property 'toLowerCase' of undefined
+ERR! login     at Object.getUserID (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\src\getUserID.js:27:19)
+ERR! login     at callback (H:\Web-development\University-Project\login-v2\routes\notice.js:97:21)
+ERR! login     at H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\index.js:442:14
+ERR! login     at tryCatcher (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\util.js:26:23)
+ERR! login     at Promise._settlePromiseFromHandler (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\promise.js:510:31)
+ERR! login     at Promise._settlePromiseAt (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\promise.js:584:18)
+ERR! login     at Async._drainQueue (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\async.js:128:12)
+ERR! login     at Async._drainQueues (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\async.js:133:10)
+ERR! login     at Immediate.Async.drainQueues [as _onImmediate] (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\async.js:15:14)
+ERR! login     at processImmediate (internal/timers.js:439:21)
+TypeError: Cannot read property 'toLowerCase' of undefined
+    at Object.getUserID (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\src\getUserID.js:27:19)
+    at callback (H:\Web-development\University-Project\login-v2\routes\notice.js:97:21)
+    at H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\index.js:442:14
+    at tryCatcher (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\util.js:26:23)    
+    at Promise._settlePromiseFromHandler (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\promise.js:510:31)
+    at Promise._settlePromiseAt (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\promise.js:584:18)
+    at Async._drainQueue (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\async.js:128:12)
+    at Async._drainQueues (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\async.js:133:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (H:\Web-development\University-Project\login-v2\node_modules\facebook-chat-api\node_modules\bluebird\js\main\async.js:15:14)
+    at processImmediate (internal/timers.js:439:21)
+(node:3828) DeprecationWarning: Mongoose: `findOneAndUpdate()` and `findOneAndDelete()` without the `useFindAndModify` option set to false are deprecated. See: https://mongoosejs.com/docs/deprecations.html#-findandmodify-
